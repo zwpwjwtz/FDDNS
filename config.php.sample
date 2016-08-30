@@ -1,0 +1,21 @@
+<?php
+if (!defined('FDDNS_ROOT')) exit(0);
+
+//Protocal specifications
+define('RUN_MODE', 'server');
+define('HEADER_LEN', 16);
+define('CRC_POS', 0);
+define('CRC_LEN', 4);
+define('COMMUNICATION_KEY', '1234567890');
+
+//Parameters format
+define('SEPERATOR_VENDOR', "\n");
+define('SEPERATOR_RECORD', ';');
+define('SEPERATOR_FIELD', ',');
+
+//Client-specified settings
+define('LOCAL_IP_BY_API', false);
+define('LOCAL_IPv6_BY_API', false);
+define('SERVER_URL', 'http://127.0.0.1/FDDNS/index.php');
+$FDDNS_verdorList = array('dnspod');
+?>
